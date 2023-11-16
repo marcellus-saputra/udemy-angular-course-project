@@ -10,6 +10,7 @@
     <div class="col-xs-12">
         <app-recipe-item 
         *ngFor="let localRecipe of recipes"
-        [recipe]="localRecipe"></app-recipe-item>
+        [recipe]="localRecipe"
+        (recipeClicked)="onRecipeClicked(localRecipe)"></app-recipe-item>
     </div>
 </div>
