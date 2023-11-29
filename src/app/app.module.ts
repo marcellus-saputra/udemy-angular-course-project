@@ -9,6 +9,7 @@ import { RecipeItemComponent } from './recipe-book/recipe-item/recipe-item.compo
 import { RecipeDetailsComponent } from './recipe-book/recipe-details/recipe-details.component';
 import { RecipeBookComponent } from './recipe-book/recipe-book.component';
 import { HeaderComponent } from './header/header.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
